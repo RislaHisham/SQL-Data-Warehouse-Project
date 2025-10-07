@@ -41,7 +41,6 @@ The warehouse uses a star schema for efficient reporting and analytics:
 
      DimProduct – Stores product information.
 
-
 * Presentation / Reporting Layer
 
 Power BI dashboards visualize sales trends, top products, revenue by region, and KPIs.
