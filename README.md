@@ -39,7 +39,6 @@ DimCustomer – Stores customer information (Name, Location, Segment).
 
 DimProduct – Stores product information (Category, Subcategory, Brand).
 
-DimSalesperson – Stores sales representative details (Name, Region, Team).
 
 * Presentation / Reporting Layer
 
