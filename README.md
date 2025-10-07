@@ -13,25 +13,25 @@ Create meaningful reports and visualizations using Power BI.
 
 # 1. Architecture Layers
 
-Data Source Layer
+* Data Source Layer
 
 Raw sales data provided in CSV/Excel format.
 
 Could represent transactional systems like ERP, CRM, or POS systems.
 
-Staging Layer
+* Staging Layer
 
 Temporary storage of raw data.
 
 Data is cleaned, validated, and pre-processed for transformation.
 
-Data Warehouse Layer
+* Data Warehouse Layer
 
-Fact Table: FactSales
+** Fact Table: FactSales
 
 Contains transactional sales data: SalesID, DateID, ProductID, CustomerID, Quantity, Revenue, Discount, etc.
 
-Dimension Tables:
+** Dimension Tables:
 
 DimDate – Stores date details (Year, Month, Quarter, Day).
 
@@ -41,7 +41,7 @@ DimProduct – Stores product information (Category, Subcategory, Brand).
 
 DimSalesperson – Stores sales representative details (Name, Region, Team).
 
-Presentation / Reporting Layer
+* Presentation / Reporting Layer
 
 Power BI dashboards visualize sales trends, top products, revenue by region, and KPIs.
 
