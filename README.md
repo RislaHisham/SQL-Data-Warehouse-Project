@@ -52,7 +52,7 @@ Step 1: Data Understanding & Profiling
 
 * Examine raw sales data for structure, missing values, duplicates, and inconsistencies.
 
-* Identify key columns needed for analysis (e.g., OrderID, Date, Product, Customer, Revenue).
+* Identify key columns needed for analysis (e.g.,customer_key, product_key, date_key).
 
 Step 2: Data Warehouse Design
 
