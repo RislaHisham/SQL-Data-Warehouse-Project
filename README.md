@@ -5,11 +5,11 @@ This project demonstrates the design and implementation of a Data Warehouse solu
 
 Key Objectives:
 
-Design a scalable and organized data warehouse for sales data.
+* Design a scalable and organized star schema-based data warehouse for sales data.
 
-Transform raw data into clean, structured tables ready for analytics.
+* Transform raw data into clean, structured tables ready for analytics.
 
-Create meaningful reports and visualizations using Power BI.
+* Create meaningful reports and visualizations using Power BI.
 
 # 1. Architecture Layers
 
@@ -25,19 +25,21 @@ Temporary storage of raw data.
 
 Data is cleaned, validated, and pre-processed for transformation.
 
-* Data Warehouse Layer
+* Data Warehouse Layer (Star Schema)
 
-** Fact Table: FactSales
+The warehouse uses a star schema for efficient reporting and analytics:
 
-   // Contains transactional sales data: SalesID, DateID, ProductID, CustomerID, Quantity, Revenue, Discount, etc.
+// Fact Table: 
+     
+     ORDERNUMBER, customer_key, product_key, date_key, QUANTITYORDERED, PRICEEACH, TOTALSALES
+      
+// Dimension Tables:
 
-** Dimension Tables:
+     DimDate – Stores date details (Year, Month, Quarter, Day).
 
-   // DimDate – Stores date details (Year, Month, Quarter, Day).
+     DimCustomer – Stores customer information.
 
-   // DimCustomer – Stores customer information (Name, Location, Segment).
-
-   // DimProduct – Stores product information (Category, Subcategory, Brand).
+     DimProduct – Stores product information.
 
 
 * Presentation / Reporting Layer
