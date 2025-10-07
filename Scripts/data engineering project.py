@@ -10,8 +10,8 @@ import os
 # 1️⃣ Database Connection
 # ============================================================
 
-DB_USER = "postgres"
-DB_PASS = "12345678"
+DB_USER = "your_username_here"
+DB_PASS = "your_password_here"
 DB_HOST = "localhost"
 DB_PORT = 5432
 DB_NAME = "sales_dw"
@@ -162,3 +162,4 @@ print("\n🎯 Data Warehouse Build Complete (Enhanced Version)")
 print("✅ Schemas: raw, stg, analytics")
 print("✅ Tables and indexes created successfully in PostgreSQL")
 print("✅ Ready for Power BI connection!")
+
